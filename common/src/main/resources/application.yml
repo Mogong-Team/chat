@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: chat
+  data:
+    mongodb:
+      username: jh
+      password: 0000
+      host: localhost
+      port: 27017
+      database: mogong
