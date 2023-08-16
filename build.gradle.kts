@@ -52,7 +52,7 @@ subprojects {
     }
 }
 
-project(":common") {
+project(":core") {
     dependencies {
         implementation("org.springframework.data:spring-data-mongodb")
     }
@@ -73,7 +73,7 @@ project(":api") {
     }
 
     dependencies {
-        implementation(project(":common"))
+        implementation(project(":core"))
         implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         testImplementation("org.springframework.boot:spring-boot-starter-test")
     }
